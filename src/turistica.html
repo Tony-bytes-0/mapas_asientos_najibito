@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grilla con Tailwind</title>
+  <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- <div id="base" class="grid grid-cols-3 gap-4 p-10"> -->
+    
+  <div class="m-0 flex flex-row bg-gray-400 h-screen w-screen justify-center items-center">
+    <!-- primera seccion -->
+    <div class="bg-slate-400 text-white p-5 flex flex-col w-1/3 h-3/5 rounded-md shadow-xl">
+      <!-- baños y escaleras -->
+      <div class="flex flex-row h-2/4 w-full">
+        <div class="bg-blue-600 p-5 flex w-2/5 rounded-md shadow-xl ">
+
+        </div>
+        <div class="bg-pink-600 p-5 flex w-2/5 rounded-md shadow-xl">
+
+        </div>
+        <div class="w-full  bg-amber-600 p-5 flex rounded-md shadow-xl ">
+        </div>
+      </div>
+      <!-- baños y zona de escaleras / primera fila de asientos -->
+      <div class="flex flex-row h-full w-full justify-start items-end">
+        <div class="bg-green-600 flex w-10 h-2/5 rounded-md shadow-xl"></div>
+        <div class=" flex flex-col bg-slate-300 flex-shrink w-full h-1/4 rounded-md shadow-xl ">
+          <div class="flex flex-row h-2/4 w-full flex-shrink" id="canteenSeatsUp"></div>
+          <div class="flex flex-row h-2/4 w-full flex-shrink" id="canteenSeatsDown"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- area central de 15 columnas de puestos -->
+    <div class="flex-col w-3/5 h-3/5  text-white p-5 flex  items-start rounded-md shadow-xl bg-slate-400">
+      <div class=" flex flex-col bg-slate-300 flex-shrink w-full h-2/4 rounded-md shadow-xl ">
+      <div class="flex flex-row h-2/4 w-full flex-shrink" id="midSeats1"></div>
+      <div class="flex flex-row h-2/4 w-full flex-shrink" id="midSeats2"></div>
+      <div class="flex flex-row h-2/4 w-full flex-shrink" id="midSeats3"></div>
+      <div class="flex flex-row h-2/4 w-full flex-shrink" id="midSeats4"></div>
+      <div class="flex flex-row h-2/4 w-full flex-shrink" id="midSeats5"></div>
+    </div>
+
+    <div class="flex flex-col bg-slate-300 flex-shrink w-full h-1/4 rounded-md shadow-xl  mt-32  ">
+      <div class="flex flex-row h-2/4 w-full flex-shrink" id="midSeats6"></div>
+      <div class="flex flex-row h-2/4 w-full flex-shrink" id="midSeats7"></div>
+      <div class="flex flex-row h-2/4 w-full flex-shrink" id="midSeats8"></div>
+    </div>
+    </div>
+
+    <!-- ultimas secciones de puestos 8663352 maria rivero 25877 restaurar boleto pdp, no salio confirmacion / items-end-->
+    <div class="flex-col w-1/5 h-3/5 bg-slate-400 text-white p-5 flex flex-wrap items-end rounded-md shadow-xl">
+      <div class="flex flex-col w-full h-1/4 items-end">
+        <div class="flex flex-col bg-slate-800 flex-shrink w-4/6 h-full rounded-md shadow-xl items-end"></div><!-- zona de escaleras -->
+      </div>
+      <div class=" flex flex-col bg-slate-300 w-3/5 h-[20%] rounded-md shadow-xl mt-6">
+        <div class="flex flex-row h-2/4 w-full flex-shrink" id="lastSeats1"></div>
+        <div class="flex flex-row h-2/4 w-full flex-shrink" id="lastSeats2"></div>
+      </div>
+      
+      <div class=" flex flex-col bg-slate-300 w-full h-1/4 rounded-md shadow-xl mt-32">
+        <div class="flex flex-row h-2/4 w-full flex-shrink" id="lastSeats3"></div>
+        <div class="flex flex-row h-2/4 w-full flex-shrink" id="lastSeats4"></div>
+        <div class="flex flex-row h-2/4 w-full flex-shrink" id="lastSeats5"></div>
+      </div>
+    </div>
+    <!--Leyenda-->
+    
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+
+</html>
+
+</html>
