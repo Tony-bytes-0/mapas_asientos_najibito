@@ -1,5 +1,4 @@
-const commonSeat = "p-1 m-1 w-2 flex-shrink flex-grow shadow-xl bg-blue-800";
-const vipSeat = "p-1 ml-3 mr-3 m-1 w-2 flex-shrink flex-grow shadow-xl bg-blue-800";
+const commonSeat = "p-1 m-1 w-2 flex-shrink flex-grow shadow-xl bg-blue-800 rounded-md";
 //const seatColor = "bg-blue-800";
 
 function generateSeatsTuple(start, end, interval, id, seatStyle) {
@@ -16,7 +15,7 @@ function generateSeatsTuple(start, end, interval, id, seatStyle) {
     seats.appendChild(newItem); // añadir el div al elemento seleccionado
   }
 }
-//start, end, interval -------------------------------------------
+//start, end, interval, id, tailWindClasses -------------------------------------------
 //Turistica
 
 generateSeatsTuple(154, 140, 2, "canteenSeatsUp", commonSeat);

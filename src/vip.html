@@ -9,33 +9,31 @@
     </head>
     <body>
       <div
-        class="flex bg-slate-500 h-screen w-screen justify-center items-center text-white"
+        class="flex flex-col bg-slate-500 h-screen w-screen justify-center items-center text-white"
       >
-        <div class="flex flex-col h-2/4 w-4/12 bg-slate-400">
-          <div
-            class="flex flex-col bg-slate-300 flex-shrink w-3/4 h-1/4 rounded-md shadow-xl"
-          >
+      <div class="flex flex-row h-2/4 w-full  justify-center items-center">
+        <div class="flex flex-col h-full w-2/5 bg-slate-400">
+          <div class="flex flex-col bg-slate-300 flex-shrink w-3/4 h-1/4 rounded-md shadow-xl" >
             <div class="flex flex-row h-2/4 w-full flex-shrink" id="vip1"></div>
             <div class="flex flex-row h-2/4 w-full flex-shrink" id="vip2"></div>
           </div>
-
-          <div
-            class="flex flex-col bg-slate-300 flex-shrink w-3/4 h-[13%] rounded-md shadow-xl items-center justify-center mt-24"
-          >
-            <div
-              class="flex flex-row h-full w-full flex-shrink"
-              id="vip3"
-            ></div>
+          <div class="flex bg-slate-500 w-full h-1/5">
+            <img src="../public/arrow.png" alt="arrow" >
+            <p class="flex text-3xl justify-center items-center ml-4"> Clase turística</p>
           </div>
-
-          <div
-            class="flex flex-col bg-slate-300 flex-shrink w-3/4 h-1/4 rounded-md shadow-xl items-end justify-end mt-20"
-          >
+          <div class="flex flex-col bg-slate-300 flex-shrink w-3/4 h-[13%] rounded-md shadow-xl items-center justify-center "> <!--aqui habia un mt-24 h-13% es a mitad de 1/4-->
+            <div class="flex flex-row h-full w-full flex-shrink" id="vip3"></div>
+          </div>
+          <div class="flex bg-slate-500 w-full h-1/5">
+            <img src="../public/arrow.png" alt="arrow" >
+            <p class="flex text-3xl justify-center items-center ml-4"> Clase turística</p>
+          </div>
+          <div class="flex flex-col bg-slate-300 flex-shrink w-3/4 h-1/4 rounded-md shadow-xl items-end justify-end" >
             <div class="flex flex-row h-2/4 w-full flex-shrink" id="vip4"></div>
             <div class="flex flex-row h-2/4 w-full flex-shrink" id="vip5"></div>
           </div>
         </div>
-        <div class="flex flex-row h-2/4 w-1/6 bg-slate-400">
+        <div class="flex flex-row h-full w-1/4 bg-slate-400">
           <div class="flex flex-col bg-slate-100">
             <div class="flex h-1/4 w-4 bg-indigo-500"></div>
             <div class="flex h-2/4 w-4 bg-slate-400"></div>
@@ -55,7 +53,24 @@
           </div>
         </div>
       </div>
-      <script src="./vip.js"></script>
+      <div
+      class="mt-20 flex flex-col bg-gray-400 h-1/6 w-2/4 justify-center items-center text-white "
+    >
+    <div class="flex flex-row bg-slate-500 w-full items-center justify-center">
+      <div class="flex text-4xl " > <b>Clase VIP - primer piso</b></div>
+  </div>
+      <div class="flex flex-row bg-slate-500 p-2 w-full ">
+          <div class="flex m-2 p-5 rounded-md bg-cyan-400"></div>
+          <div class="flex m-5 text-xl">Baños</div>
+      </div>
+
+      <div class="flex flex-row bg-slate-500 p-2 w-full ">
+          <div class="flex m-2 p-5 rounded-md bg-indigo-500"></div>
+          <div class="flex m-5 text-xl">Televisor</div>
+      </div>
+    </div>
+      </div>
+      <script src="./scripts//vip.js"></script>
     </body>
   </html>
 </html>

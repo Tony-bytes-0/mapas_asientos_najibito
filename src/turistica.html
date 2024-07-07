@@ -6,16 +6,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grilla con Tailwind</title>
+  <title>Turística</title>
   <link href="./output.css" rel="stylesheet" />
 </head>
 
 <body>
   <!-- <div id="base" class="grid grid-cols-3 gap-4 p-10"> -->
     
-  <div class="m-0 flex flex-row bg-gray-400 h-screen w-screen justify-center items-center">
+  <div class="m-0 flex flex-col bg-gray-400 h-screen w-screen justify-center items-center">
+    <div class="flex flex-row h-3/5 w-full">
     <!-- primera seccion -->
-    <div class="bg-slate-400 text-white p-5 flex flex-col w-1/3 h-3/5 rounded-md shadow-xl">
+    <div class="bg-slate-400 text-white p-5 flex flex-col w-1/3 h-full rounded-md shadow-xl">
       <!-- baños y escaleras -->
       <div class="flex flex-row h-2/4 w-full">
         <div class="bg-blue-600 p-5 flex w-2/5 rounded-md shadow-xl ">
@@ -27,19 +28,28 @@
         <div class="w-full  bg-amber-600 p-5 flex rounded-md shadow-xl ">
         </div>
       </div>
+      <div class="flex flex-row w-full h-2/5 bg-slate-400">
+        <div class="flex flex-row">
+            <div class="flex h-3/4 w-2/4 justify-center pt-8 pb-2 mt-5 bg-slate-500 rounded-md">
+                <img src="../public/curveArrow.png" alt="arrow">
+                <div class="flex text-4xl items-center justify-left pl-6"><b>Salida</b></div>
+            </div>
+            <p class="flex text-5xl items-center justify-left pb-5"></p>
+        </div>
+    </div>
       <!-- baños y zona de escaleras / primera fila de asientos -->
-      <div class="flex flex-row h-full w-full justify-start items-end">
-        <div class="bg-green-600 flex w-10 h-2/5 rounded-md shadow-xl"></div>
-        <div class=" flex flex-col bg-slate-300 flex-shrink w-full h-1/4 rounded-md shadow-xl ">
+      <div class="flex flex-row h-1/5 w-full ">
+        <div class="bg-green-600 flex w-24 h-full rounded-md shadow-xl"></div>
+        <div class=" flex flex-col bg-slate-300 flex-shrink w-full h-full rounded-md shadow-xl ">
           <div class="flex flex-row h-2/4 w-full flex-shrink" id="canteenSeatsUp"></div>
           <div class="flex flex-row h-2/4 w-full flex-shrink" id="canteenSeatsDown"></div>
         </div>
       </div>
-
+      
     </div>
 
     <!-- area central de 15 columnas de puestos -->
-    <div class="flex-col w-3/5 h-3/5  text-white p-5 flex  items-start rounded-md shadow-xl bg-slate-400">
+    <div class="flex-col w-3/5 h-full  text-white p-5 flex  items-start rounded-md shadow-xl bg-slate-400">
       <div class=" flex flex-col bg-slate-300 flex-shrink w-full h-2/4 rounded-md shadow-xl ">
       <div class="flex flex-row h-2/4 w-full flex-shrink" id="midSeats1"></div>
       <div class="flex flex-row h-2/4 w-full flex-shrink" id="midSeats2"></div>
@@ -56,7 +66,7 @@
     </div>
 
     <!-- ultimas secciones de puestos 8663352 maria rivero 25877 restaurar boleto pdp, no salio confirmacion / items-end-->
-    <div class="flex-col w-1/5 h-3/5 bg-slate-400 text-white p-5 flex flex-wrap items-end rounded-md shadow-xl">
+    <div class="flex-col w-1/5 h-full bg-slate-400 text-white p-5 flex flex-wrap items-end rounded-md shadow-xl">
       <div class="flex flex-col w-full h-1/4 items-end">
         <div class="flex flex-col bg-slate-800 flex-shrink w-4/6 h-full rounded-md shadow-xl items-end"></div><!-- zona de escaleras -->
       </div>
@@ -64,18 +74,42 @@
         <div class="flex flex-row h-2/4 w-full flex-shrink" id="lastSeats1"></div>
         <div class="flex flex-row h-2/4 w-full flex-shrink" id="lastSeats2"></div>
       </div>
+      <div class="flex bg-slate-500 w-full h-1/4 justify-center items-center p-1">
+        <p class="flex text-4xl justify-center items-center mr-4 "> VIP </p>
+        <img src="../public/arrowRight.png" class="w-2/4 h-3/4 pl-1" alt="arrow" >
+      </div>
       
-      <div class=" flex flex-col bg-slate-300 w-full h-1/4 rounded-md shadow-xl mt-32">
+      <div class=" flex flex-col bg-slate-300 w-full h-1/4 rounded-md shadow-xl ">
         <div class="flex flex-row h-2/4 w-full flex-shrink" id="lastSeats3"></div>
         <div class="flex flex-row h-2/4 w-full flex-shrink" id="lastSeats4"></div>
         <div class="flex flex-row h-2/4 w-full flex-shrink" id="lastSeats5"></div>
       </div>
     </div>
-    <!--Leyenda-->
-    
+  </div>
+  <div class="mt-2 pl-4 flex flex-col bg-gray-400 w-full justify-center items-center text-white" >
+    <div class="flex flex-row bg-slate-500 w-full items-center justify-center">
+      <div class="flex text-4xl " > <b>Clase turística - primer piso</b></div>
+  </div>
+  <div class="flex flex-row bg-slate-500 w-full ">
+      <div class="flex m-2 p-5 rounded-md bg-pink-600"></div>
+      <div class="flex m-5 text-xl">Baño de damas</div>
+  </div>
+  <div class="flex flex-row bg-slate-500 w-full">
+      <div class="flex m-2 p-5 rounded-md bg-blue-700"></div>
+      <div class="flex m-5 text-xl">Baño de caballeros</div>
+  </div>
+  <div class="flex flex-row bg-slate-500 w-full">
+      <div class="flex m-2 p-5 rounded-md bg-orange-600"></div>
+      <div class="flex m-5 text-xl">Cafetín</div>
+  </div>
+  <div class="flex flex-row bg-slate-500 w-full ">
+      <div class="flex m-2 p-5 rounded-md bg-green-600 "></div>
+      <div class="flex m-5 text-xl">Escaleras</div>
+  </div>
+</div>
   </div>
   
-  <script src="./index.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
