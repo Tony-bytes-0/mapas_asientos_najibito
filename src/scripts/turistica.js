@@ -1,5 +1,9 @@
 const commonSeat = "p-1 m-1 w-2 flex-shrink flex-grow shadow-xl bg-blue-800 rounded-md";
-//const seatColor = "bg-blue-800";
+hideSignals = true; //controla la vista de las flechas 
+if(hideSignals){
+  document.getElementById('vip.signal').className =  document.getElementById('vip.signal').className + ' opacity-0'
+  document.getElementById('exit.signal').className =  document.getElementById('vip.signal').className + ' opacity-0'
+}
 
 function generateSeatsTuple(start, end, interval, id, seatStyle) {
   const seats = document.getElementById(id);
