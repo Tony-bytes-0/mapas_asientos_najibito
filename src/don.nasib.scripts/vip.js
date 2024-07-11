@@ -57,16 +57,7 @@ dobleSeatTable(134, 132, 1, "topTable3", "left3", "right3", tableSeats)
 dobleSeatTable(140, 138, 1, "topTable4", "left4", "right4", tableSeats)
 dobleSeatTable(146, 144, 1, "topTable5", "left5", "right5", tableSeats)
 dobleSeatTable(152, 150, 1, "topTable6", "left6", "right6", tableSeats)
-
-//reverseRow(122, 120, 1, "topTable1", tableSeats, "tableContainer1"); //, "left1", "right2"
-//createTable("topTable1");
-//reverseRow(122, 120, 1, "topTable1", tableSeats, "tableContainer2");
-//createTable(125, 123, 1, "topTable2", tableSeats, 'tableContainer2');
-//createTable(122, 120, 1, "topTable3", tableSeats, 'tableContainer3');
-//createTable(122, 120, 1, "topTable4", tableSeats, 'tableContainer4');
-//createTable(122, 120, 1, "topTable5", tableSeats, 'tableContainer5');
-//createTable(122, 120, 1, "topTable6", tableSeats, 'tableContainer6');
-
+//
 generateSeatsTuple(71, 75, 2, "topSeats1", commonSeat);
 generateSeatsTuple(70, 74, 2, "topSeats2", commonSeat);
 //
@@ -77,8 +68,6 @@ generateSeatsTuple(103, 119, 4, "topSeats6", commonSeat);
 generateSeatsTuple(102, 118, 4, "topSeats7", commonSeat);
 generateSeatsTuple(101, 117, 4, "topSeats8", commonSeat);
 generateSeatsTuple(100, 116, 4, "topSeats9", commonSeat);
-//
-
 //
 generateSeatsTuple(60, 69, 3, "mainSeats1", commonSeat);
 generateSeatsTuple(59, 68, 3, "mainSeats2", commonSeat);

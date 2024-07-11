@@ -4,8 +4,8 @@ hideSignals = true;
 if (hideSignals) {
   document.getElementById("turistica1.signal").className =
     document.getElementById("turistica1.signal").className + " opacity-0";
-  document.getElementById("turistica1.signal").className =
-    document.getElementById("turistica1.signal").className + " opacity-0";
+  document.getElementById("turistica2.signal").className =
+    document.getElementById("turistica2.signal").className + " opacity-0";
 }
 console.log("ejecucion de funcion VIP");
 function generateSeatsTuple(start, end, interval, id, seatStyle) {
