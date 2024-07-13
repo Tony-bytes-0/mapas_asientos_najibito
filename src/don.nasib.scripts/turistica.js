@@ -1,11 +1,13 @@
-const commonSeat =
-  "p-1 m-1 w-2 flex-shrink flex-grow shadow-xl bg-blue-800 rounded-md";
+const commonSeat = "p-1 m-1 w-2 flex-shrink flex-grow shadow-xl bg-blue-800 rounded-md";
+const fullcontainerSizeSeat = "p-1 m-1 w-5/6 flex-shrink flex-grow shadow-xl bg-blue-800 rounded-md";
+const tableSeats = "p-1 m-1 1 w-2 flex-shrink flex-grow shadow-xl bg-blue-800 rounded-md text-sm";
 const tableContainerStyles = "flex flex-col w-1/4 h-full";
-const tableStyles = "bg-amber-800 flex w-1/4 h-full rounded-b-full ml-2 mr-2";
+const individualTableStyles = 'flex flex-col w-full h-full bg-amber-800 ml-2 mr-2 rounded-md'
+const LargeTableContainerStyles = "flex flex-col w-full h-full";
+const tableStyles = "bg-amber-800 flex w-1/4 h-full rounded-md ml-2 mr-2";
 const squareTableStyles = "bg-amber-800 flex w-1/4 h-2/3 mt-2 mb-2";
-const circleTableStyles = "bg-orange-950 flex w-2/5 h-1/3 rounded-full mt-8"
-const tableSeats = "p-1 mt-1 mb-1 w-full h-1/4 flex-shrink flex-grow shadow-xl bg-blue-800 rounded-md";
-const circleTableSeats = "p-1 mt-3 mb-3 w-full h-1/4 flex-shrink shadow-xl bg-blue-600 rounded-md"
+const circleTableStyles = "bg-amber-800 flex w-2/6 h-1/3 rounded-full mt-8"
+const circleTableSeats = "p-1 mt-3 mb-3 w-full h-1/4 flex-shrink shadow-xl bg-blue-600 rounded-md text-sm " 
 
 
 function generateSeatsTuple(start, end, interval, id, seatStyle) {
@@ -77,19 +79,24 @@ generateSeatsTuple(298,323,5, 'topSeats10', commonSeat)
 generateSeatsTuple(297,322,5, 'topSeats11', commonSeat)
 generateSeatsTuple(296,321,5, 'topSeats12', commonSeat)
 // ----------------- mesas -------------------
-dobleSeatTableIncremental(328,331, 1, 'smallTables', 'smallTablesLeft', 'smallTablesRight', commonSeat, squareTableStyles)
-dobleSeatTableIncremental(334,337, 1, 'smallTables2', 'smallTablesLeft2', 'smallTablesRight2', commonSeat, squareTableStyles)
-dobleSeatTableIncremental(340,343, 1, 'smallTables3', 'smallTablesLeft3', 'smallTablesRight3', commonSeat, squareTableStyles)//aqui en vez de 346 - 349, el mapa tiene 346 - 348
-dobleSeatTableIncremental(346,349, 1, 'smallTables4', 'smallTablesLeft4', 'smallTablesRight4', commonSeat, squareTableStyles)
-dobleSeatTableIncremental(352,355, 1, 'smallTables5', 'smallTablesLeft5', 'smallTablesRight5', commonSeat, squareTableStyles)
-dobleSeatTableIncremental(358,361, 1, 'smallTables6', 'smallTablesLeft6', 'smallTablesRight6', commonSeat, squareTableStyles)// segun el mapa termina en 360 tambien, pues se saltaron el puesto 347
-//
+dobleSeatTableIncremental(328,331, 1, 'smallTables', 'smallTablesLeft', 'smallTablesRight', tableSeats, squareTableStyles)
+dobleSeatTableIncremental(334,337, 1, 'smallTables2', 'smallTablesLeft2', 'smallTablesRight2', tableSeats, squareTableStyles)
+dobleSeatTableIncremental(340,343, 1, 'smallTables3', 'smallTablesLeft3', 'smallTablesRight3', tableSeats, squareTableStyles)//aqui en vez de 346 - 349, el mapa tiene 346 - 348
+dobleSeatTableIncremental(346,349, 1, 'smallTables4', 'smallTablesLeft4', 'smallTablesRight4', tableSeats, squareTableStyles)
+dobleSeatTableIncremental(352,355, 1, 'smallTables5', 'smallTablesLeft5', 'smallTablesRight5', tableSeats, squareTableStyles)
+dobleSeatTableIncremental(358,361, 1, 'smallTables6', 'smallTablesLeft6', 'smallTablesRight6', tableSeats, squareTableStyles)// segun el mapa termina en 360 tambien, pues se saltaron el puesto 347
+// ------------------- mesas circulares ------------
 dobleSeatTable(327,326, 1, 3, 'table', 'leftTable', 'rightTable', circleTableSeats, circleTableStyles)
 dobleSeatTable(333,332, 1, 3, 'table2', 'leftTable2', 'rightTable2', circleTableSeats, circleTableStyles)
 dobleSeatTable(339,338, 1, 3, 'table3', 'leftTable3', 'rightTable3', circleTableSeats, circleTableStyles)
 dobleSeatTable(345,344, 1, 3, 'table4', 'leftTable4', 'rightTable4', circleTableSeats, circleTableStyles)
 dobleSeatTable(351,350, 1, 3, 'table5', 'leftTable5', 'rightTable5', circleTableSeats, circleTableStyles)
 dobleSeatTable(357,356, 1, 3, 'table6', 'leftTable6', 'rightTable6', circleTableSeats, circleTableStyles)
+// topRightSeats
+generateSeatsTuple(364,400,4, 'topRightSeats', commonSeat)
+generateSeatsTuple(363,399,4, 'topRightSeats2', commonSeat)
+generateSeatsTuple(362,398,4, 'topRightSeats3', commonSeat)
+generateSeatsTuple(361,397,4, 'topRightSeats4', commonSeat)
 //
 generateSeatsTuple(158,161,3, 'bottomSeats1', commonSeat)
 generateSeatsTuple(157,160,3, 'bottomSeats2', commonSeat)
@@ -106,7 +113,18 @@ generateSeatsTuple(184,209,5, 'bottomSeats10', commonSeat)
 generateSeatsTuple(183,208,5, 'bottomSeats11', commonSeat)
 generateSeatsTuple(182,207,5, 'bottomSeats12', commonSeat)
 //aqui me falta una columna
+reverseTuple(237,236,1, 'lastSeat01', fullcontainerSizeSeat)
 generateSeatsTuple(241,257,4, 'lastSeat', commonSeat)
 generateSeatsTuple(240,256,4, 'lastSeat2', commonSeat)
 generateSeatsTuple(239,255,4, 'lastSeat3', commonSeat)
 generateSeatsTuple(238,254,4, 'lastSeat4', commonSeat)
+//bottomTable //219/ - 23 -27 - 31
+dobleSeatTable(215, 212, 1, 4, "bottomTable", "bottomTableLeft", "bottomTableRight", fullcontainerSizeSeat)
+dobleSeatTable(223, 220, 1, 4, "bottomTable2", "bottomTableLeft2", "bottomTableRight2", fullcontainerSizeSeat)
+createTable('individualTable', individualTableStyles)//mesa individual, sin asientos
+reverseTuple(231, 228, 1 ,'bottomTable3', fullcontainerSizeSeat)
+reverseTuple(235, 232, 1 ,'bottomTable4', fullcontainerSizeSeat)
+createTable('individualTable2', individualTableStyles)//mesa individual, sin asientos
+
+
+

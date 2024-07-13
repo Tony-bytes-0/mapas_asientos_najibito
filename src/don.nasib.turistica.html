@@ -11,9 +11,9 @@
   </head>
   <body>
     <div class="flex flex-col bg-slate-400 h-screen w-screen text-white">
-      <div class="flex flex-row h-1/5 bg-slate-800" id="topContainer"></div>
+      <!-- <div class="flex flex-row h-1/5 bg-slate-800" id="topContainer"></div> -->
       <!-- main-->
-      <div class="flex flex-col h-3/5 bg-black" id="main">
+      <div class="flex flex-col h-3/5" id="main">
         <div class="flex flex-row bg-blue-400 w-full h-3/6" id="don.nasib.turistica.topSeats" >
           <div class="flex flex-row bg-slate-500 w-1/3 h-full items-end">
             <div class="flex flex-col bg-slate-300 w-1/5 h-3/5">
@@ -37,7 +37,7 @@
           </div>
           <!--mesas-->
           <div class="flex flex-col bg-slate-500 w-1/3 h-full">
-            <div class="flex flex-row bg-slate-300 h-1/5 w-full">
+            <div class="flex flex-row bg-slate-300 h-1/5 w-full ">
                 <div class="flex flex-row bg-red-400 w-1/6 h-full" id="smallTables"></div>
                 <div class="flex flex-row bg-red-400 w-1/6 h-full" id="smallTables2"></div>
                 <div class="flex flex-row bg-red-400 w-1/6 h-full" id="smallTables3"></div>
@@ -56,19 +56,23 @@
             </div>
           </div>
           <!--mesas-->
-          <div class="flex flex-row bg-slate-500 w-1/3 h-full m-1">
-            <div class="flex flex-col bg-slate-300 w-2/12 h-2/3"></div>
-            <div class="flex flex-col bg-slate-300 w-10/12 h-full"></div>
-          </div>
+          <div class="flex flex-col bg-slate-300 w-1/4 h-full p-1">
+                <div class="flex flex-row bg-slate-300 w-full h-1/4" id="topRightSeats"></div>
+                <div class="flex flex-row bg-slate-300 w-full h-1/4" id="topRightSeats2"></div>
+                <div class="flex flex-row bg-slate-300 w-full h-1/4" id="topRightSeats3"></div>
+                <div class="flex flex-row bg-slate-300 w-full h-1/4" id="topRightSeats4"></div>
+            </div>
+            <div class="flex flex-col bg-cyan-400 w-1/12 h-full items-start">
+                <div class="flex h-full w-1/12 bg-slate-600"></div>
+            </div>
         </div>
-        <!--aqui hay mas del 100% 3/6 + 3/6 + 1/3 -->
         <!--pasillo-->
         <div class="flex flex-row bg-slate-400 w-full h-1/3">
 
         </div>
         <!--pasillo-->
-        <div class="flex flex-row bg-blue-400 w-full h-3/6" id="bottomContainer">
-            <div class="flex flex-row bg-slate-500 w-2/6 h-full m-1">
+        <div class="flex flex-row w-full h-3/6" id="bottomContainer">
+            <div class="flex flex-row bg-slate-600 w-3/6 h-full ">
                 <div class="flex flex-col bg-slate-300 w-1/6 h-3/5">
                     <div class="flex flex-row h-1/3 w-full" id="bottomSeats1"></div>
                     <div class="flex flex-row h-1/3 w-full" id="bottomSeats2"></div>
@@ -80,7 +84,7 @@
                     <div class="flex flex-row h-1/4 w-full" id="bottomSeats6"></div>
                     <div class="flex flex-row h-1/4 w-full" id="bottomSeats7"></div>
                 </div>
-                <div class="flex flex-col bg-slate-300 w-3/6 h-full">
+                <div class="flex flex-col bg-slate-300 w-2/6 h-full">
                     <div class="flex flex-row h-1/4 w-full" id="bottomSeats8"></div>
                     <div class="flex flex-row h-1/4 w-full" id="bottomSeats9"></div>
                     <div class="flex flex-row h-1/4 w-full" id="bottomSeats10"></div>
@@ -88,15 +92,29 @@
                     <div class="flex flex-row h-1/4 w-full" id="bottomSeats12"></div>
                 </div>
             </div>
-            <div class="flex flex-col bg-slate-500 w-1/12 h-full m-1"></div>
-            <div class="flex flex-col bg-slate-500 w-1/6 h-full m-1"></div>
-            <div class="flex flex-col bg-slate-500 w-1/12 h-full m-1"></div>
-            <!-- ultima fila de mesas -->
-            <div class="flex flex-row bg-slate-500 w-2/6 h-full m-1">
-                <div class="flex flex-col bg-blue-400 w-2/4 h-full">
+            <div class="flex flex-row bg-orange-600 w-[16%] h-full m-1">
+                <div class="flex h-full w-1/12 bg-slate-400"></div>
+                <div class="flex h-full w-10/12 "></div>
+                <div class="flex h-full w-1/12 bg-slate-400"></div>
+            </div>
+            <!-- <div class="flex flex-col bg-slate-500 w-1/12 h-full m-1"></div> -->
 
+            <!-- ultima fila de mesas -->
+            <div class="flex flex-row bg-red-400 w-2/5 h-full items-end">
+                <div class="flex flex-row bg-slate-300 w-2/6 h-full" id="bottomTable"></div>
+                <div class="flex flex-row bg-slate-300 w-2/6 h-full" id="bottomTable2"></div>
+                <div class="flex flex-row bg-slate-300 w-1/12 h-full" id="individualTable"></div>
+                <div class="flex flex-col bg-slate-300 w-1/12 h-full" id="bottomTable3"></div>
+                <div class="flex flex-col bg-slate-300 w-1/12 h-full" id="bottomTable4"></div>
+                <div class="flex flex-row bg-slate-300 w-1/12 h-full" id="individualTable2"></div>
+            </div>
+            <div class="flex flex-row  w-1/5 h-full ">
+<!--                 <div class="flex flex-col bg-blue-400 w-2/5 h-full">
+                </div> -->
+                <div class="flex flex-col bg-slate-300 w-1/6 h-full " > 
+                     <div class="flex flex-col w-full h-2/4" id="lastSeat01"></div> 
                 </div>
-                <div class="flex flex-col bg-red-400 w-2/4 h-full">
+                <div class="flex flex-col bg-slate-300 w-5/6 h-full">
                     <div class="flex flex-row h-1/4 w-full" id="lastSeat"></div>
                     <div class="flex flex-row h-1/4 w-full" id="lastSeat2"></div>
                     <div class="flex flex-row h-1/4 w-full" id="lastSeat3"></div>
@@ -107,7 +125,28 @@
         <!--aqui hay mas del 100% 3/6 + 3/6 + 1/3 -->
         <!-- main-->
       </div>
-      <div class="flex flex-col h-1/5 bg-slate-800" id="leyenda"></div>
+      <div class="flex flex-col h-1/6 bg-slate-800" id="leyenda">
+        <div class="flex flex-row bg-slate-500 w-full items-center justify-center">
+            <div class="flex text-4xl " > <b>Clase turística - primer piso</b></div>
+        </div>
+ <!--        <div class="flex flex-row bg-slate-500 w-full">
+            <div class="flex m-2 p-5 rounded-md bg-gray-800"></div>
+            <div class="flex m-5 text-xl">Televisor</div>
+        </div> -->
+        <div class="flex flex-row bg-slate-500 w-full">
+            <div class="flex m-2 p-5 rounded-md bg-cyan-400"></div>
+            <div class="flex m-5 text-xl">Baños</div>
+        </div>
+        <div class="flex flex-row bg-slate-500 w-full">
+            <div class="flex m-2 p-5 rounded-md bg-orange-600"></div>
+            <div class="flex m-5 text-xl">Cafetín</div>
+        </div>
+  
+        <div class="flex flex-row bg-slate-500 w-full">
+          <div class="flex m-2 p-5 rounded-md bg-amber-800"></div>
+          <div class="flex m-5 text-xl">Mesas</div>
+      </div>
+      </div>
     </div>
 
     <script src="don.nasib.scripts/turistica.js" async defer></script>
