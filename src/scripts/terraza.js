@@ -12,6 +12,7 @@ function generateSeatsTuple(start, end, interval, id, seatStyle) {
     const newItem = document.createElement("div");
     let indexString = index.toString();
     newItem.className = seatStyle;
+    newItem.id = 'Z' + index
     while (indexString.length < 3) {
       indexString = '0' + indexString
     }
