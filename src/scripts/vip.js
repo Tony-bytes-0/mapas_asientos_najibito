@@ -7,12 +7,12 @@ if (hideSignals) {
   document.getElementById("turistica2.signal").className =
     document.getElementById("turistica2.signal").className + " opacity-0";
 }
-console.log("ejecucion de funcion VIP");
 function generateSeatsTuple(start, end, interval, id, seatStyle) {
   const seats = document.getElementById(id);
 
   for (let index = start; index >= end; index -= interval) {
     const newItem = document.createElement("div");
+    newItem.id = 'V' + index
     let indexString = index.toString();
     newItem.className = seatStyle;
     while (indexString.length < 3) {
